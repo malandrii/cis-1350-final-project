@@ -1,7 +1,15 @@
+.iframe-url {
+    display: none;
+}
+
 @media print {
 
-    header, footer, nav {
+    header, footer, nav, iframe {
         display: none;
+    }
+
+    .iframe-url{
+        display: block;
     }
 
     .container {

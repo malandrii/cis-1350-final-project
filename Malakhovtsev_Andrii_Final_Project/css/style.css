@@ -3,11 +3,16 @@ figure > img {
     max-height: 45%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+section > img {
+    max-width: 120%;
+    max-height: 120%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* Basic Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0;
@@ -18,6 +23,18 @@ header, footer {
     background: #f0efef;
     padding: 20px;
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 .container {
@@ -71,6 +88,23 @@ nav ul li a {
     clear: both;
 }
 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+header img.flag {
+    height: 1em;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
 
 /* Hover Effect */
 a:hover,
@@ -84,6 +118,18 @@ textarea:hover {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+table#vertical {
+    display: block;
+}
+
+table#vertical td {
+    display: inline-block;
+}
+
+table#vertical img {
+    width: 100%;
 }
 
 th, td {
@@ -100,6 +146,63 @@ tfoot {
     background-color: #f2f2f2;
 }
 
+/* Enhance the figure image */
+figure {
+    text-align: center; /* Center align the figure content */
+    margin: 20px 0; /* Add some vertical margin */
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #ccc; /* Add an outline */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+/* Adjust figcaption styles */
+figure figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Add spacing between sections and other elements */
+section {
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p, ul, ol, blockquote {
+    margin-bottom: 20px;
+}
+
+blockquote {
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+aside.sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+aside.sidebar ul {
+    padding-left: 20px;
+}
+
+aside.sidebar ul li {
+    margin-bottom: 10px;
+}
 
 /* Responsive Design for Different Viewports */
 @media (max-width: 600px) {
