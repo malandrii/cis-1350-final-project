@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/viewports.css">
+
     <title>US Economy Through COVID</title>
 </head>
 <body>
@@ -34,33 +36,39 @@
                 <form action="#" method="post">
                     <fieldset>
                         <legend>Survey on YOUR EXPERIENCE of Economic Impact</legend>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name"><br>
+
+                        <label for="name">Name*:</label>
+                        <input type="text" id="name" name="name" placeholder="first and last name" required><br>
                         
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email"><br>
                         
                         <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone"><br>
+                        <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn" 
+                            pattern="\(\d{3}\) \d{3}-\d{4}"><br>
                         
                         <label>Gender:</label>
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label>
+
                         <input type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label>
+
                         <input type="radio" id="other" name="gender" value="other">
                         <label for="other">Other</label><br>
                         
                         <label>Fields:</label>
                         <input type="checkbox" id="economy" name="interest" value="economy">
                         <label for="economy">Economy</label>
+
                         <input type="checkbox" id="health" name="interest" value="health">
                         <label for="health">Healthcare</label>
+                        
                         <input type="checkbox" id="politics" name="interest" value="politics">
                         <label for="politics">Politics</label><br>
                         
-                        <label for="comments">Comments:</label>
-                        <textarea id="comments" name="comments"></textarea><br>
+                        <label for="comments">Comments*:</label>
+                        <textarea id="comments" name="comments" required></textarea><br>
                         
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
@@ -71,7 +79,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy; 2024 U.S.A. Economy Through COVID</p>
+            <p>&copy; 2024 U.S.A. Economy Through COVID - Andrii Malakhovtsev</p>
         </div>
     </footer>
 </body>

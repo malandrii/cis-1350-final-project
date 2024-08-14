@@ -1,10 +1,10 @@
-.iframe-url {
-    display: none;
-}
-
 @media print {
 
-    header, footer, nav, iframe {
+    section {
+        page-break-inside: avoid;
+    }
+
+    header, footer, .sidebar, nav, iframe {
         display: none;
     }
 
@@ -15,5 +15,32 @@
     .container {
         width: 100%;
     }
+
+    /* Forms */
+
+    input::placeholder, input[type=submit], input[type=reset], textarea  {
+        opacity: 0;
+    }
+
+    fieldset {
+        border: none;
+    }
     
+    /* Hypertext Styles */
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a::after{
+        content: " (" attr(href) ") ";
+        font-weight: bold;
+        word-wrap: break-word;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 0.5in;
+    }
 }
